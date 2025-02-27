@@ -12,7 +12,6 @@ import ComposableArchitecture
 struct TCA_StudyApp: App {
     static let store = Store(initialState: CounterFeature.State()) {
         CounterFeature()
-            ._printChanges()
     }
     
     var body: some Scene {
