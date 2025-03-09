@@ -50,9 +50,22 @@
 		E3B288772D6F659D00EBDC80 /* Testing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Testing.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/Testing.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		E3A8A1D32D7D8E8C001E95F1 /* Exceptions for "TCA_Study" folder in "TCA_StudyTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				CounterFeature.swift,
+			);
+			target = E3B2880F2D66302500EBDC80 /* TCA_StudyTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		E3B288022D66302300EBDC80 /* TCA_Study */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E3A8A1D32D7D8E8C001E95F1 /* Exceptions for "TCA_Study" folder in "TCA_StudyTests" target */,
+			);
 			path = TCA_Study;
 			sourceTree = "<group>";
 		};
@@ -606,7 +619,7 @@
 			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.17.1;
+				minimumVersion = 1.18.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
