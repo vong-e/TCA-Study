@@ -8,12 +8,12 @@
 import Foundation
 import ComposableArchitecture
 
-struct NumberFactClient {
-    var fetch: (Int) async throws -> String
+public struct NumberFactClient {
+    public var fetch: (Int) async throws -> String
 }
 
 extension NumberFactClient: DependencyKey {
-    static var liveValue = NumberFactClient(
+    public static var liveValue = NumberFactClient(
         fetch: { number in
             let (data, _) = try await URLSession.shared
                 .data(from: URL(string: "http://numbersapi.com/\(number)")!)
@@ -23,7 +23,7 @@ extension NumberFactClient: DependencyKey {
 }
 
 extension DependencyValues {
-    var numberFact: NumberFactClient {
+    public var numberFact: NumberFactClient {
         get { self[NumberFactClient.self] }
         set { self[NumberFactClient.self] = newValue}
     }
