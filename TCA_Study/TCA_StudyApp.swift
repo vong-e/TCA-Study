@@ -12,7 +12,7 @@ import ComposableArchitecture
 struct TCA_StudyApp: App {
     static let store = Store(initialState: AppFeature.State()) {
         AppFeature()
-      }
+    }
     
     var body: some Scene {
         WindowGroup {
