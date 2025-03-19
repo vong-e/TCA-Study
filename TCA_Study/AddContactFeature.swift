@@ -23,6 +23,7 @@ struct AddContactFeature {
          예제에서는 Delegate를 사용해서 자식->부모 커뮤니케이션을 헀지만, @Shared 프로퍼티로 처리 가능함, 실제 프로젝트에서는 @Shared 프로퍼티 사용해보자
          potinfree tutoral: https://pointfreeco.github.io/swift-composable-architecture/main/tutorials/buildingsyncups/
          */
+        @CasePathable
         enum Delegate: Equatable {
             case cancel
             case saveContact(Contact)
